@@ -33,3 +33,93 @@ canvas {
 .jumbotron {
   background-color: white;
 }
+
+.round-rect {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 5px 1px;
+}
+
+.round-rect-black {
+  background-color: black;
+}
+
+.round-rect-pink {
+  background-color: #FFC0CB;
+}
+
+.round-rect-red {
+  background-color: #FF0000;
+}
+
+.round-rect-orange {
+  background-color: #FFA500;
+}
+
+.round-rect-yellow {
+  background-color: #FFFF00;
+}
+
+.round-rect-light_green {
+  background-color: #90EE90;
+}
+
+.round-rect-green {
+  background-color: #008000;
+}
+
+.round-rect-blue {
+  background-color: #0000FF;
+}
+
+.round-rect-purple {
+  background-color: #800080;
+}
+
+.round-rect-violet {
+  background-color: #800080;
+}
+
+.arrow-up {
+  margin: auto;
+  margin-bottom: 3px;
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid black;
+  opacity: 0.5;
+}
+
+.arrow-down {
+  margin: auto;
+  margin-top: 7px;
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid black;
+  opacity: 0.5;
+}
+
+.arrow-right {
+  margin: auto;
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid black;
+  opacity: 0.5;
+}
+
+.arrow-left {
+  margin: auto;
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+  border-right:15px solid black; 
+  opacity: 0.5;
+}
