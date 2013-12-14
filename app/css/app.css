@@ -78,10 +78,6 @@ canvas {
   background-color: #800080;
 }
 
-.round-rect-violet {
-  background-color: #800080;
-}
-
 .arrow-up {
   margin: auto;
   margin-bottom: 3px;
@@ -91,6 +87,10 @@ canvas {
   border-right: 15px solid transparent;
   border-bottom: 15px solid black;
   opacity: 0.5;
+}
+
+.arrow-up:hover {
+  opacity: 1;
 }
 
 .arrow-down {
@@ -104,6 +104,10 @@ canvas {
   opacity: 0.5;
 }
 
+.arrow-down:hover {
+  opacity: 1;
+}
+
 .arrow-right {
   margin: auto;
   width: 0; 
@@ -114,6 +118,10 @@ canvas {
   opacity: 0.5;
 }
 
+.arrow-right:hover {
+  opacity: 1;
+}
+
 .arrow-left {
   margin: auto;
   width: 0; 
@@ -122,4 +130,8 @@ canvas {
   border-bottom: 15px solid transparent; 
   border-right:15px solid black; 
   opacity: 0.5;
+}
+
+.arrow-left:hover {
+  opacity: 1;
 }
