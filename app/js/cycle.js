@@ -31,7 +31,11 @@ d2.onclick=function() {cycleDown(s2)};
 d3.onclick=function() {cycleDown(s3)};
 d4.onclick=function() {cycleDown(s4)};
 
+autoCycle();
+var counter=setInterval(autoCycle, 1000);
+
 function cycleUp(square){
+  clearInterval(counter);
   var x = cycle.shift();
   while(x !== square.className){
     cycle.push(x);
@@ -42,6 +46,7 @@ function cycleUp(square){
 }
 
 function cycleDown(square){
+  clearInterval(counter);
   var x = cycle.shift();
   while(x !== square.className){
     cycle.push(x);
@@ -49,4 +54,15 @@ function cycleDown(square){
   }
   cycle.push(x);
   square.className = cycle[6];
+}
+
+function autoCycle(){
+  var rand = cycle[Math.floor(Math.random()*cycle.length)];
+  s1.className = rand;
+  rand = cycle[Math.floor(Math.random()*cycle.length)];
+  s2.className = rand;
+  rand = cycle[Math.floor(Math.random()*cycle.length)];
+  s3.className = rand;
+  rand = cycle[Math.floor(Math.random()*cycle.length)];
+  s4.className = rand;
 }
