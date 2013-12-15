@@ -16,8 +16,6 @@ var s2 = document.getElementById("square-2");
 var s3 = document.getElementById("square-3");
 var s4 = document.getElementById("square-4");
 
-var submitButton = document.getElementById("submit-button");
-
 var cycle = ["round-rect round-rect-pink", "round-rect round-rect-red",
              "round-rect round-rect-orange", "round-rect round-rect-yellow",
              "round-rect round-rect-light_green", "round-rect round-rect-green",
@@ -33,9 +31,10 @@ d2.onclick=function() {cycleDown(s2)};
 d3.onclick=function() {cycleDown(s3)};
 d4.onclick=function() {cycleDown(s4)};
 
-autoCycle();
-var counter=setInterval(autoCycle, 1000);
+randomize_colors();
+var counter=setInterval(randomize_colors, 1000);
 
+// changes color of square to next color
 function cycleUp(square){
   clearInterval(counter);
   var x = cycle.shift();
@@ -48,6 +47,7 @@ function cycleUp(square){
   updateSubmitButton();
 }
 
+// changes color of square to prev color
 function cycleDown(square){
   clearInterval(counter);
   var x = cycle.shift();
@@ -60,7 +60,8 @@ function cycleDown(square){
   updateSubmitButton();
 }
 
-function autoCycle(){
+// randomizes all 4 colors
+function randomize_colors(){
   var rand = cycle[Math.floor(Math.random()*cycle.length)];
   s1.className = rand;
   rand = cycle[Math.floor(Math.random()*cycle.length)];
@@ -71,7 +72,31 @@ function autoCycle(){
   s4.className = rand;
 }
 
+// gets code corresponding to the configuration of colors in the 4
+// squares
+function getColorCode(){
+  var key = { 'pink' : '1',
+              'red' : '2',
+              'orange' : '3',
+              'yellow' : '4',
+              'light_green' : '5',
+              'green' : '6',
+              'blue' : '7',
+              'purple' : '8' };
+  var a = s1.className.split('-');
+  var digit1 = key[a.pop()];
+  var b = s2.className.split('-');
+  var digit2 = key[b.pop()];
+  var c = s3.className.split('-');
+  var digit3 = key[c.pop()];
+  var d = s4.className.split('-');
+  var digit4 = key[d.pop()];
+  return digit1 + digit2 + digit3 + digit4;
+}
+
+// updates the link within submit-button according to the current
+// color combination
 function updateSubmitButton() {
-  alert(submitButton.outerHTML);
-  submitButton.outerHTML;
+  var submitButton = document.getElementById("submit-button");
+  submitButton.outerHTML = '<a href="#/' + getColorCode() + '" type="button" class="btn btn-success" id="submit-button">Enter</a>';
 }
