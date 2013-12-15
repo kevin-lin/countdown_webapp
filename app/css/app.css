@@ -22,7 +22,8 @@ canvas {
 }
 
 #tree {
-  padding-right: 50px;
+  padding-right: 2%;
+  padding-left: 2%;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -79,59 +80,16 @@ canvas {
 }
 
 .arrow-up {
-  margin: auto;
-  margin-bottom: 3px;
-  width: 0; 
-  height: 0; 
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid black;
-  opacity: 0.5;
 }
 
 .arrow-up:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .arrow-down {
-  margin: auto;
-  margin-top: 7px;
-  width: 0; 
-  height: 0; 
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid black;
-  opacity: 0.5;
+  margin-top: 15px;
 }
 
 .arrow-down:hover {
-  opacity: 1;
-}
-
-.arrow-right {
-  margin: auto;
-  width: 0; 
-  height: 0; 
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid black;
   opacity: 0.5;
-}
-
-.arrow-right:hover {
-  opacity: 1;
-}
-
-.arrow-left {
-  margin: auto;
-  width: 0; 
-  height: 0; 
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent; 
-  border-right:15px solid black; 
-  opacity: 0.5;
-}
-
-.arrow-left:hover {
-  opacity: 1;
 }

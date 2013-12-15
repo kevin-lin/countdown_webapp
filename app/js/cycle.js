@@ -16,6 +16,8 @@ var s2 = document.getElementById("square-2");
 var s3 = document.getElementById("square-3");
 var s4 = document.getElementById("square-4");
 
+var submitButton = document.getElementById("submit-button");
+
 var cycle = ["round-rect round-rect-pink", "round-rect round-rect-red",
              "round-rect round-rect-orange", "round-rect round-rect-yellow",
              "round-rect round-rect-light_green", "round-rect round-rect-green",
@@ -43,6 +45,7 @@ function cycleUp(square){
   }
   cycle.push(x);
   square.className = cycle[0];
+  updateSubmitButton();
 }
 
 function cycleDown(square){
@@ -54,6 +57,7 @@ function cycleDown(square){
   }
   cycle.push(x);
   square.className = cycle[6];
+  updateSubmitButton();
 }
 
 function autoCycle(){
@@ -65,4 +69,9 @@ function autoCycle(){
   s3.className = rand;
   rand = cycle[Math.floor(Math.random()*cycle.length)];
   s4.className = rand;
+}
+
+function updateSubmitButton() {
+  alert(submitButton.outerHTML);
+  submitButton.outerHTML;
 }
