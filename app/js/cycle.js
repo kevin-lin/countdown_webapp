@@ -98,5 +98,5 @@ function getColorCode(){
 // color combination
 function updateSubmitButton() {
   var submitButton = document.getElementById("submit-button");
-  submitButton.outerHTML = '<a href="#/' + getColorCode() + '" type="button" class="btn btn-success" id="submit-button">Enter</a>';
+  submitButton.outerHTML = '<a href="#/' + CryptoJS.SHA1(getColorCode()) + '" type="button" class="btn btn-success" id="submit-button">Enter</a>';
 }

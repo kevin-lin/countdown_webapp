@@ -22,18 +22,6 @@
   opacity:1;
 }
  
-/*
-  We're using CSS keyframe animations for when
-  the leave event is triggered for the element
-  that has the .card class
-*/
-.card.ng-leave {
-  -webkit-animation:0.5s my_animation;
-  -moz-animation:0.5s my_animation;
-  -o-animation:0.5s my_animation;
-  animation:0.5s my_animation;
-}
- 
 @keyframes my_animation {
   from { opacity:1; }
   to { opacity:0; }

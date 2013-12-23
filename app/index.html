@@ -9,15 +9,11 @@
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
+  <!-- redirects to home page given any link -->
+  <script>window.location = "index.html#/";</script>
   <canvas id="canvas"></canvas>
   <div class="container">
     <div class="header">
-      <!--
-      <ul class="nav nav-pills pull-right">
-        <li><a href="#/view1">view1</a></li>
-        <li><a href="#/view2">view2</a></li>
-      </ul>
-      -->
       <a href="/"><h1 class="title center">Merry Christmas</h1></a>
     </div>
     <div class="visible-xs"><br></div>
@@ -58,6 +54,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
+  <script src="js/sha1.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
