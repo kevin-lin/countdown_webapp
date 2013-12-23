@@ -37,5 +37,7 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/9c6b5171d4c6f4a1959f21ee1c008be6edd4fa9a', {templateUrl: 'partials/people/JoyMong.html', controller: 'userCtrl'});
   $routeProvider.when('/ad20fb46a7d675254f5132de407c672da8999876', {templateUrl: 'partials/people/JustinWong.html', controller: 'userCtrl'});
   $routeProvider.when('/541f30554e2caa245dbe67fc4a03cb8c01a23c1a', {templateUrl: 'partials/people/SharonYu.html', controller: 'userCtrl'});
+  $routeProvider.when('/d8826bbd80b4233b7522d1c538aeaf66c64e259a', {templateUrl: 'partials/people/ClaudioWilson.html', controller: 'userCtrl'});
+  $routeProvider.when('/beeb8a45624cc6d50a2f4f19788b232aaf4e067b', {templateUrl: 'partials/people/AliceWang.html', controller: 'userCtrl'});
   $routeProvider.otherwise({templateUrl: 'partials/people/default.html', controller: 'userCtrl'});
 }]);
