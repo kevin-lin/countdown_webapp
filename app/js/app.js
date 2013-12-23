@@ -13,6 +13,7 @@ angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
   // $routeProvider.when('/', {templateUrl: 'partials/color_selector.html', controller: 'userCtrl'});
   $routeProvider.when('/', {templateUrl: 'partials/blank.html', controller: 'userCtrl'});
+  $routeProvider.when('/aced6dedd8203df3cb3d81f46c263fd71b7b3e48', {templateUrl: 'partials/people/example.html', controller: 'userCtrl'});
   $routeProvider.when('/bf5ce6bca1837184b86a1fb332edb735665ca1ed', {templateUrl: 'partials/people/PsymonLee.html', controller: 'userCtrl'});
   $routeProvider.when('/c30635fb61378918ac1a7c5feb2a819a5a6bcfac', {templateUrl: 'partials/people/MarisaJones.html', controller: 'userCtrl'});
   $routeProvider.when('/0ccc9bc1bb63ccc1f2123272def4a1963c2b60e5', {templateUrl: 'partials/people/GraceHugh.html', controller: 'userCtrl'});
@@ -35,5 +36,6 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/1fec9b8dd175d565a1e9d143698e908f58a7fb1e', {templateUrl: 'partials/people/BillingsEverts.html', controller: 'userCtrl'});
   $routeProvider.when('/9c6b5171d4c6f4a1959f21ee1c008be6edd4fa9a', {templateUrl: 'partials/people/JoyMong.html', controller: 'userCtrl'});
   $routeProvider.when('/ad20fb46a7d675254f5132de407c672da8999876', {templateUrl: 'partials/people/JustinWong.html', controller: 'userCtrl'});
+  $routeProvider.when('/541f30554e2caa245dbe67fc4a03cb8c01a23c1a', {templateUrl: 'partials/people/SharonYu.html', controller: 'userCtrl'});
   $routeProvider.otherwise({templateUrl: 'partials/people/default.html', controller: 'userCtrl'});
 }]);
