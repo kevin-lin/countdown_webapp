@@ -5,6 +5,7 @@
   <title>Merry Christmas</title>
   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/jumbotron-narrow.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
@@ -20,6 +21,7 @@
       <a href="/"><h1 class="title center">Merry Christmas</h1></a>
     </div>
     <div class="visible-xs"><br></div>
+
     <div class="jumbotron">
       enter your unique code
       <table width="100%">
@@ -45,8 +47,7 @@
       <a href="#" type="button" class="btn btn-success" id="submit-button" disabled="disabled">Enter</a>
     </div>
 
-    <div ng-view></div>
-
+    <div ng-view class="card"></div>
     <div id="footer">
       <p class="muted credit">Created by Kevin Lin</p>
     </div>
@@ -62,6 +63,7 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+  <script src="lib/angular/angular-animate.js"></script>
 
   <script src="js/snow.js"></script>
   <script src="js/cycle.js"></script>
