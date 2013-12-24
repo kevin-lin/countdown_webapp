@@ -35,6 +35,10 @@ canvas {
   background-color: white;
 }
 
+.letter-body {
+  text-align: left
+}
+
 .round-rect {
   margin: auto;
   width: 100px;
