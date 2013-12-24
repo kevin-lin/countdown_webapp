@@ -39,5 +39,11 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/541f30554e2caa245dbe67fc4a03cb8c01a23c1a', {templateUrl: 'partials/people/SharonYu.html', controller: 'userCtrl'});
   $routeProvider.when('/d8826bbd80b4233b7522d1c538aeaf66c64e259a', {templateUrl: 'partials/people/ClaudioWilson.html', controller: 'userCtrl'});
   $routeProvider.when('/beeb8a45624cc6d50a2f4f19788b232aaf4e067b', {templateUrl: 'partials/people/AliceWang.html', controller: 'userCtrl'});
+  $routeProvider.when('/9ad24c41f37e8083ea0e1be887a8234190214962', {templateUrl: 'partials/people/EmilyLo.html', controller: 'userCtrl'});
+  $routeProvider.when('/d37b12e0bb7f77c6e850297d853d3d3220577250', {templateUrl: 'partials/people/KyleHan.html', controller: 'userCtrl'});
+  $routeProvider.when('/29d31287a4059477da444528be7db202337ccb32', {templateUrl: 'partials/people/RyanNguyen.html', controller: 'userCtrl'});
+  $routeProvider.when('/66723b1ab80b0213ec7ca5c7606dd2a30cdee59e', {templateUrl: 'partials/people/KevinNhan.html', controller: 'userCtrl'});
+  $routeProvider.when('/643fd520debff9520d6b712f7e0c516bf223b2b8', {templateUrl: 'partials/people/KimberlyBarraza.html', controller: 'userCtrl'});
+  $routeProvider.when('/73dc8f5748a14c821e64febc5e461a606f6bf7b1', {templateUrl: 'partials/people/EpicRepresentative.html', controller: 'userCtrl'});
   $routeProvider.otherwise({templateUrl: 'partials/people/default.html', controller: 'userCtrl'});
 }]);
